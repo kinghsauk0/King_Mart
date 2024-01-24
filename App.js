@@ -1,6 +1,8 @@
 
-import MainStack from "./src/navigator/MainStack";
-import Splash from "./src/screens/auth/Splash";
+import MainStack from "./src/navigator/Stack/MainStack";
+
+
+
 
 
 

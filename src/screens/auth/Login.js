@@ -104,19 +104,18 @@ const Login = ({ navigation }) => {
             )}
           </TouchableOpacity>
           <View style={{ marginBottom: 100 }}>
-            <TextInput
-              style={[
-                styles.input,
-
-                { backgroundColor: "#FFFFFF", borderColor: lightMode?.text },
-              ]}
-              placeholder="Enter Your Number"
-              onChangeText={handleNumberChange}
-              value={password}
-              secureTextEntry
-              placeholderTextColor="#000000"
-              cursorColor={lightMode?.text}
-            />
+          <TextInput
+            style={[
+              styles.input,
+              { backgroundColor: "#FFFFFF", borderColor: lightMode?.text },
+            ]}
+            placeholder="Enter Your Number"
+            onChangeText={handleNumberChange}
+            value={number}
+            keyboardType="numeric"
+            placeholderTextColor="#000000"
+            cursorColor="black"
+          />
             <TextInput
               style={[
                 styles.input,
