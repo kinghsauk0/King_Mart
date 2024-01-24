@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
 import { UseProuductContext } from '../../context/ProductsApi'
 import { Url } from '../../constants/ApiUrl'
+import { UseTheme } from '../../context/ThemeContext'
 
 
 
 export default function Catalog() {
+  const {lightMode} =UseTheme()
 
   const {productData,ProductApiCall} = UseProuductContext()
   
@@ -15,9 +17,13 @@ export default function Catalog() {
 
   
   return (
-   <View>
-    <Text>CataLog</Text>
-   </View>
+  <SafeAreaView style={{
+    flex: 1,
+    backgroundColor: lightMode.bg,
+    
+  }}>
+
+  </SafeAreaView>
   )
 }
 

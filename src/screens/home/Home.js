@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import DrawerNavigator from '../../navigator/Drawer/Drawer'
+import ButtomTab from '../../navigator/Buttom/ButtomTab'
+
 
 export default function Home() {
   return (
-   <DrawerNavigator/>
+  <ButtomTab/>
   )
 }
 
